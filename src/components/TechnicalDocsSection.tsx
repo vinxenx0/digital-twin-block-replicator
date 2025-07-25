@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const TechnicalDocsSection = () => {
   return (
-    <div className="py-20 bg-white">
+    <section id="technical-docs" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -140,11 +140,11 @@ const TechnicalDocsSection = () => {
                       <p className="text-sm text-gray-600 mb-4">
                         Documentación online, ejemplos y tutoriales
                       </p>
-                      <Button variant="outline" size="sm" className="text-blue-600 border-blue-600 hover:bg-blue-50">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Acceder
-                      </Button>
-                    </div>
+                       <Button variant="outline" size="sm" className="text-blue-600 border-blue-600 hover:bg-blue-50">
+                         <ExternalLink className="w-4 h-4 mr-2" />
+                         Acceder
+                       </Button>
+                     </div>
                   </div>
                 </CardContent>
               </Card>
@@ -210,7 +210,7 @@ const TechnicalDocsSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

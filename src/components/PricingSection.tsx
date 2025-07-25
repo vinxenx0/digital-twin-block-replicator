@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const PricingSection = () => {
   return (
-    <div className="py-20 bg-gray-50">
+    <section id="pricing" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -169,7 +169,7 @@ const PricingSection = () => {
           </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

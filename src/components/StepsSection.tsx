@@ -3,7 +3,7 @@ import { Shield } from "lucide-react";
 
 const StepsSection = () => {
   return (
-    <div className="py-20 bg-gray-900">
+    <section id="steps" className="py-20 bg-gray-900">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold text-white mb-4">
           Así de
@@ -60,7 +60,7 @@ const StepsSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

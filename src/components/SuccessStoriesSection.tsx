@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const SuccessStoriesSection = () => {
   return (
-    <div className="py-20 bg-gray-50">
+    <section id="success-stories" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -150,10 +150,10 @@ const SuccessStoriesSection = () => {
               </p>
               
               <div className="flex mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                ))}
-              </div>
+                 {[...Array(5)].map((_, i) => (
+                   <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                 ))}
+               </div>
               
               <p className="text-gray-700 mb-6 text-sm">
                 "El hecho de tener estado determinando nuestras métricas de SEO. AI SHIELD nos 
@@ -169,7 +169,7 @@ const SuccessStoriesSection = () => {
           </Card>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

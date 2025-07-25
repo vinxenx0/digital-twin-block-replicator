@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const BenefitsSection = () => {
   return (
-    <div className="py-20 bg-white">
+    <section id="benefits" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm mb-6">
@@ -21,7 +21,7 @@ const BenefitsSection = () => {
             <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center">
               <Bell className="w-6 h-6 text-pink-600" />
             </div>
-            <h3 className="text-2xl font-semibold text-gray-800">Lo que iAlert te permite</h3>
+            <h3 className="text-2xl font-semibold text-gray-800">Lo que guardIAnes te permite</h3>
           </div>
         </div>
 
@@ -138,7 +138,7 @@ const BenefitsSection = () => {
           </Card>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

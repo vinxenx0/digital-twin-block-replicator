@@ -1,4 +1,5 @@
 
+import MegaMenuNavigation from "@/components/MegaMenuNavigation";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import StepsSection from "@/components/StepsSection";
@@ -7,12 +8,13 @@ import PricingSection from "@/components/PricingSection";
 import SecuritySection from "@/components/SecuritySection";
 import SuccessStoriesSection from "@/components/SuccessStoriesSection";
 import TechnicalDocsSection from "@/components/TechnicalDocsSection";
-import StatsSection from "@/components/StatsSection";
+// import StatsSection from "@/components/StatsSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
+      <MegaMenuNavigation />
       <HeroSection />
       <FeaturesSection />
       <StepsSection />
@@ -21,7 +23,7 @@ const Index = () => {
       <SecuritySection />
       <SuccessStoriesSection />
       <TechnicalDocsSection />
-      <StatsSection />
+      {/* <StatsSection /> */}
       <Footer />
     </div>
   );

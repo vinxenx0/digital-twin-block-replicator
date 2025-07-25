@@ -26,7 +26,7 @@ const StatsSection = () => {
               <Shield className="w-6 h-6 text-blue-600" />
             </div>
             <div>
-              <div className="font-semibold text-gray-900">iAlert</div>
+              <div className="font-semibold text-gray-900">guardIAnes</div>
               <div className="text-sm text-gray-500">Fundada en España • Casos de Uso • Proyectos</div>
             </div>
           </div>
