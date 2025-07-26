@@ -13,7 +13,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <Shield className="w-5 h-5 text-white" />
               </div>
-              <span className="font-bold text-xl">los guardianes</span>
+              <span className="font-bold text-xl">Los GuardIAS</span>
             </div>
             <p className="text-gray-400 text-sm mb-6">
               La primera plataforma de protección y control de contenido
@@ -79,7 +79,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-sm text-gray-400">
-            © 2024 los guardianes. Todos los derechos reservados.
+            © 2024 Los GuardIAS. Todos los derechos reservados.
           </div>
           <div className="text-sm text-gray-400">
             Hecho con ❤️ para proteger el futuro digital

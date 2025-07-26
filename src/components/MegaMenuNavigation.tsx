@@ -21,7 +21,7 @@ const useCasesItems = [
   { id: "features", label: "Qué Detectamos", description: "Tipos de amenazas que identificamos" },
   { id: "benefits", label: "Sectores", description: "Industrias que pueden beneficiarse" },
   { id: "success-stories", label: "Testimonios", description: "Lo que dicen nuestros clientes" },
-  { id: "pricing", label: "Comparativa", description: "los guardianes vs alternativas" },
+  { id: "pricing", label: "Comparativa", description: "Los GuardIAS vs alternativas" },
   { id: "benefits", label: "Beneficios Avanzados", description: "Soluciones completas a problemas reales" },
 ];
 
@@ -191,7 +191,7 @@ const MegaMenuNavigation = () => {
             onClick={() => scrollToSection("hero")}
           >
             <Shield className="h-8 w-8 text-primary mr-3" />
-            <span className="text-xl font-bold text-foreground">los guardianes</span>
+            <span className="text-xl font-bold text-foreground">Los GuardIAS</span>
           </div>
           
           <NavigationMenu className="hidden lg:flex">
@@ -200,14 +200,14 @@ const MegaMenuNavigation = () => {
                 <NavigationMenuTrigger className="text-muted-foreground hover:text-primary">
                   Producto
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="left-1/2 top-0 -translate-x-1/2 data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto">
+                <NavigationMenuContent className="left-1/2 top-0 -translate-x-1/2 data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto md:left-1/2 md:-translate-x-1/2">
                   <MenuSection 
                     title="Producto"
                     items={productItems} 
                     highlightSection={{
                       icon: Rocket,
                       title: "Integración Rápida",
-                      description: "Configura los guardianes en minutos con nuestra API simple y documentación completa.",
+                      description: "Configura Los GuardIAS en minutos con nuestra API simple y documentación completa.",
                       color: "text-primary",
                       bg: "bg-primary/10"
                     }}
@@ -219,14 +219,14 @@ const MegaMenuNavigation = () => {
                 <NavigationMenuTrigger className="text-muted-foreground hover:text-primary">
                   Casos de Uso
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="left-1/2 top-0 -translate-x-1/2 data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto">
+                <NavigationMenuContent className="left-1/2 top-0 -translate-x-1/2 data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto md:left-1/2 md:-translate-x-1/2">
                   <MenuSection 
                     title="Casos de Uso"
                     items={useCasesItems} 
                     highlightSection={{
                       icon: Users,
                       title: "Casos de Éxito",
-                      description: "Descubre cómo empresas como la tuya han mejorado su seguridad con los guardianes.",
+                      description: "Descubre cómo empresas como la tuya han mejorado su seguridad con Los GuardIAS.",
                       color: "text-secondary-foreground",
                       bg: "bg-secondary/10"
                     }}
@@ -238,7 +238,7 @@ const MegaMenuNavigation = () => {
                 <NavigationMenuTrigger className="text-muted-foreground hover:text-primary">
                   Empresa
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="left-1/2 top-0 -translate-x-1/2 data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto">
+                <NavigationMenuContent className="left-1/2 top-0 -translate-x-1/2 data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto md:left-1/2 md:-translate-x-1/2">
                   <MenuSection 
                     title="Empresa"
                     items={corporateItems} 
