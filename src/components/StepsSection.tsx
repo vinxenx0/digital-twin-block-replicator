@@ -42,7 +42,7 @@ const StepsSection = () => {
             </div>
             <h3 className="text-xl font-semibold text-white mb-4">Detección</h3>
             <p className="text-gray-300">
-              IA SHIELD detecta bots con JS, bots sin JS y distingue IA amigas.
+              los guardianes detecta bots con JS, bots sin JS y distingue IA amigas.
             </p>
           </div>
           

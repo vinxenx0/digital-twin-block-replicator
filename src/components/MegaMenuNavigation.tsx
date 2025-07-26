@@ -21,7 +21,7 @@ const useCasesItems = [
   { id: "features", label: "Qué Detectamos", description: "Tipos de amenazas que identificamos" },
   { id: "benefits", label: "Sectores", description: "Industrias que pueden beneficiarse" },
   { id: "success-stories", label: "Testimonios", description: "Lo que dicen nuestros clientes" },
-  { id: "pricing", label: "Comparativa", description: "guardIAnes vs alternativas" },
+  { id: "pricing", label: "Comparativa", description: "los guardianes vs alternativas" },
   { id: "benefits", label: "Beneficios Avanzados", description: "Soluciones completas a problemas reales" },
 ];
 
@@ -191,7 +191,7 @@ const MegaMenuNavigation = () => {
             onClick={() => scrollToSection("hero")}
           >
             <Shield className="h-8 w-8 text-primary mr-3" />
-            <span className="text-xl font-bold text-foreground">guardIAnes</span>
+            <span className="text-xl font-bold text-foreground">los guardianes</span>
           </div>
           
           <NavigationMenu className="hidden lg:flex">
@@ -207,7 +207,7 @@ const MegaMenuNavigation = () => {
                     highlightSection={{
                       icon: Rocket,
                       title: "Integración Rápida",
-                      description: "Configura guardIAnes en minutos con nuestra API simple y documentación completa.",
+                      description: "Configura los guardianes en minutos con nuestra API simple y documentación completa.",
                       color: "text-primary",
                       bg: "bg-primary/10"
                     }}
@@ -226,7 +226,7 @@ const MegaMenuNavigation = () => {
                     highlightSection={{
                       icon: Users,
                       title: "Casos de Éxito",
-                      description: "Descubre cómo empresas como la tuya han mejorado su seguridad con guardIAnes.",
+                      description: "Descubre cómo empresas como la tuya han mejorado su seguridad con los guardianes.",
                       color: "text-secondary-foreground",
                       bg: "bg-secondary/10"
                     }}

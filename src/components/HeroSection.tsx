@@ -31,7 +31,7 @@ const HeroSection = () => {
               <div className="flex items-center gap-3 text-blue-300 mb-6">
                 <div className="flex items-center gap-2 bg-blue-500/20 backdrop-blur-sm rounded-full px-4 py-2 border border-blue-400/30">
                   <Shield className="w-4 h-4" />
-                  <span className="text-sm font-medium">Protección IA Empresarial</span>
+                  <span className="text-sm font-medium">Tu contenido tus reglas</span>
                   <Sparkles className="w-4 h-4 animate-pulse" />
                 </div>
               </div>
@@ -46,13 +46,43 @@ const HeroSection = () => {
                 </span>
               </h1>
               
-              <p className="text-blue-100 text-xl mb-6 leading-relaxed opacity-90">
-                Limita el uso que hace la IA de tu web aplicando tus normas y condiciones.
+              <p className="text-blue-100 text-xl mb-8 leading-relaxed opacity-90">
+                Vigila, protege y monetiza el uso que hacen las IA en tu sitio web.
               </p>
-              
-              <p className="text-blue-300 text-base mb-10 opacity-80">
-                Protege, controla y monetiza tu contenido digital frente a IAs fraudulentas.
-              </p>
+
+              {/* Benefits List */}
+              <div className="grid md:grid-cols-2 gap-4 mb-10 max-w-2xl">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
+                    <Shield className="w-4 h-4 text-red-600" />
+                  </div>
+                  <span className="text-blue-200">Previene ataques de IA maliciosas</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                    <Zap className="w-4 h-4 text-green-600" />
+                  </div>
+                  <span className="text-blue-200">Mejora tu SEO y experiencia de usuario</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <Stars className="w-4 h-4 text-blue-600" />
+                  </div>
+                  <span className="text-blue-200">Aplica términos y condiciones para IA</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                    <Sparkles className="w-4 h-4 text-purple-600" />
+                  </div>
+                  <span className="text-blue-200">Tarifica el acceso a tus contenidos</span>
+                </div>
+                <div className="flex items-center gap-3 md:col-span-2">
+                  <div className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center">
+                    <Rocket className="w-4 h-4 text-orange-600" />
+                  </div>
+                  <span className="text-blue-200">Sin cambiar de proveedor ni costes ocultos</span>
+                </div>
+              </div>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-16">
                 <Button className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl shadow-blue-500/25 border border-blue-400/30 transition-all duration-300 hover:scale-105 hover:shadow-blue-500/40">

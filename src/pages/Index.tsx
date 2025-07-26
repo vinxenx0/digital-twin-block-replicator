@@ -17,12 +17,12 @@ const Index = () => {
       <MegaMenuNavigation />
       <HeroSection />
       <FeaturesSection />
-      <StepsSection />
       <BenefitsSection />
+      <StepsSection />
       <PricingSection />
-      <SecuritySection />
+      {/* <SecuritySection /> */}
       <SuccessStoriesSection />
-      <TechnicalDocsSection />
+      {/* <TechnicalDocsSection /> */}
       {/* <StatsSection /> */}
       <Footer />
     </div>

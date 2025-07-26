@@ -21,7 +21,7 @@ const BenefitsSection = () => {
             <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center">
               <Bell className="w-6 h-6 text-pink-600" />
             </div>
-            <h3 className="text-2xl font-semibold text-gray-800">Lo que guardIAnes te permite</h3>
+            <h3 className="text-2xl font-semibold text-gray-800">Lo que los guardianes te permite</h3>
           </div>
         </div>
 
