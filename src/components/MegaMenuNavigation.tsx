@@ -42,7 +42,7 @@ const MegaMenuNavigation = () => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const response = await fetch("http://localhost:8000/auth/check-auth", {
+        const response = await fetch("https://losguardias.com/rest/auth/check-auth", {
           method: "GET",
           credentials: "include", // Enviar cookies al backend
         });
