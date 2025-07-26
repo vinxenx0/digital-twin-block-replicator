@@ -1,3 +1,4 @@
+// src/components/MegaMenuNavigation.tsx
 import { useState, useEffect } from "react";
 import {
   NavigationMenu,
@@ -34,11 +35,33 @@ const corporateItems = [
 
 const MegaMenuNavigation = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Verificar autenticación al montar el componente
+  useEffect(() => {
+    const checkAuth = async () => {
+      try {
+        const response = await fetch("http://localhost:8000/auth/check-auth", {
+          method: "GET",
+          credentials: "include", // Enviar cookies al backend
+        });
+        const data = await response.json();
+        setIsAuthenticated(data.authenticated);
+      } catch (error) {
+        console.error("Error al verificar autenticación:", error);
+        setIsAuthenticated(false);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    checkAuth();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 100;
-
       const sections = [
         "hero",
         "features",
@@ -90,7 +113,6 @@ const MegaMenuNavigation = () => {
   }) => (
     <div className="w-[900px] p-8">
       <div className="grid grid-cols-3 gap-8">
-        {/* Primera columna - Navegación principal */}
         <div>
           <h3 className="font-bold text-foreground mb-6 text-lg">{title}</h3>
           <div className="space-y-2">
@@ -108,8 +130,6 @@ const MegaMenuNavigation = () => {
             ))}
           </div>
         </div>
-
-        {/* Segunda columna - Enlaces útiles */}
         <div>
           <h3 className="font-bold text-foreground mb-6 text-lg">Enlaces Útiles</h3>
           <div className="space-y-4">
@@ -133,8 +153,6 @@ const MegaMenuNavigation = () => {
             </a>
           </div>
         </div>
-
-        {/* Tercera columna - Destacado */}
         <div className={`${highlightSection.bg} rounded-xl p-6 border border-border`}>
           <div className={`inline-flex items-center justify-center w-12 h-12 ${highlightSection.bg} rounded-lg mb-4 border border-border`}>
             <highlightSection.icon className={`h-6 w-6 ${highlightSection.color}`} />
@@ -149,8 +167,6 @@ const MegaMenuNavigation = () => {
           </a>
         </div>
       </div>
-
-      {/* Footer del menú */}
       <div className="mt-8 pt-6 border-t border-border">
         <div className="flex items-center justify-between">
           <div className="text-sm text-muted-foreground">
@@ -239,12 +255,23 @@ const MegaMenuNavigation = () => {
             </NavigationMenuList>
           </NavigationMenu>
           
-          <a 
-            href="https://losguardias.com/login"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg font-medium transition-colors"
-          >
-            Prueba Gratuita
-          </a>
+          {isLoading ? (
+            <span className="text-muted-foreground">Cargando...</span>
+          ) : isAuthenticated ? (
+            <a 
+              href="http://localhost:3000/dashboard"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg font-medium transition-colors"
+            >
+              Panel de Control
+            </a>
+          ) : (
+            <a 
+              href="https://losguardias.com/login"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg font-medium transition-colors"
+            >
+              Prueba Gratuita
+            </a>
+          )}
         </div>
       </div>
     </nav>
