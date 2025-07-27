@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-yellow-400 via-orange-400 to-yellow-300 min-h-screen pt-28">
+    <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-gray-100 to-white min-h-screen pt-28">
       {/* Cyberpunk background effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/3 w-32 h-32 bg-gradient-to-r from-yellow-500/30 to-orange-500/30 rounded-full blur-3xl"></div>
@@ -25,11 +25,11 @@ const HeroSection = () => {
               </div>
               
               <h1 className="text-6xl lg:text-7xl font-bold mb-8 leading-tight">
-                <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 bg-clip-text text-transparent">
                   People has rights,
                 </span>
                 <br />
-                <span className="bg-gradient-to-r from-orange-600 via-red-600 to-orange-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-green-400 via-green-500 to-green-400 bg-clip-text text-transparent">
                   AI follow rules.
                 </span>
               </h1>
@@ -79,7 +79,7 @@ const HeroSection = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-16">
-                <Button className="group bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl border transition-all duration-300 hover:scale-105">
+                <Button className="group bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl border transition-all duration-300 hover:scale-105">
                   <Rocket className="w-5 h-5 mr-2" />
                   Empezar Ahora
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -87,18 +87,18 @@ const HeroSection = () => {
               </div>
               
               {/* Enhanced Stats */}
-              <div className="grid grid-cols-3 gap-8">
+               <div className="grid grid-cols-3 gap-8">
                 <div className="text-center group">
                   <div className="text-gray-900 text-3xl font-bold mb-2 group-hover:scale-110 transition-transform">2min</div>
                   <div className="text-gray-700 text-sm font-medium">Instalación</div>
                 </div>
                 <div className="text-center group">
-                  <div className="text-gray-900 text-3xl font-bold mb-2 group-hover:scale-110 transition-transform">0€</div>
-                  <div className="text-gray-700 text-sm font-medium">Pagos recurrentes</div>
+                  <div className="text-gray-900 text-3xl font-bold mb-2 group-hover:scale-110 transition-transform">Sin</div>
+                  <div className="text-gray-700 text-sm font-medium">Costes ocultos</div>
                 </div>
                 <div className="text-center group">
-                  <div className="text-gray-900 text-3xl font-bold mb-2 group-hover:scale-110 transition-transform">30</div>
-                  <div className="text-gray-700 text-sm font-medium">Días garantía</div>
+                  <div className="text-gray-900 text-3xl font-bold mb-2 group-hover:scale-110 transition-transform">Sin</div>
+                  <div className="text-gray-700 text-sm font-medium">Cambiar de proveedor</div>
                 </div>
               </div>
             </div>
