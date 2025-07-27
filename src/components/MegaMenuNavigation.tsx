@@ -183,15 +183,18 @@ const MegaMenuNavigation = () => {
   );
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-lg border-b border-border">
+    <nav className="fixed top-12 left-0 right-0 z-50 bg-background/95 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div 
             className="flex items-center cursor-pointer" 
             onClick={() => scrollToSection("hero")}
           >
-            <Shield className="h-8 w-8 text-primary mr-3" />
-            <span className="text-xl font-bold text-foreground">Los GuardIAS</span>
+            <img 
+              src="/lovable-uploads/0927c965-34a2-4b04-a064-4608043cbb26.png" 
+              alt="Los GuardIAS" 
+              className="h-8"
+            />
           </div>
           
           <NavigationMenu className="hidden lg:flex">

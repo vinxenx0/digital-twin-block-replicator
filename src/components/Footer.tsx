@@ -10,10 +10,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <Shield className="w-5 h-5 text-white" />
-              </div>
-              <span className="font-bold text-xl">Los GuardIAS</span>
+              <img 
+                src="/lovable-uploads/0927c965-34a2-4b04-a064-4608043cbb26.png" 
+                alt="Los GuardIAS" 
+                className="h-8"
+              />
             </div>
             <p className="text-gray-400 text-sm mb-6">
               La primera plataforma de protección y control de contenido
@@ -62,7 +63,7 @@ const Footer = () => {
             <div className="mb-6">
               <div className="flex items-center gap-2 text-sm text-gray-400 mb-2">
                 <span>📧</span>
-                <span>hola@aicontrol.es</span>
+                <span>hola@losguardias.com</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-400 mb-2">
                 <span>📞</span>
@@ -70,7 +71,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-400">
                 <span>📍</span>
-                <span>Madrid, España</span>
+                <span>Murcia, España</span>
               </div>
             </div>
           </div>

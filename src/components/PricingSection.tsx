@@ -31,7 +31,7 @@ export default function PricingSection() {
               <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-6 h-6 text-green-600" />
               </div>
-              <CardTitle className="text-2xl font-bold text-gray-900">Gratuito</CardTitle>
+              <CardTitle className="text-2xl font-bold text-gray-900">Gratuito • Analiza</CardTitle>
               <div className="text-4xl font-bold text-gray-900 mb-2">0€</div>
               <p className="text-gray-600">Para siempre • Sin compromisos</p>
             </CardHeader>
@@ -84,7 +84,7 @@ export default function PricingSection() {
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Zap className="w-6 h-6 text-blue-600" />
               </div>
-              <CardTitle className="text-2xl font-bold text-gray-900">Pro</CardTitle>
+              <CardTitle className="text-2xl font-bold text-gray-900">Pro • Disuade y Protege</CardTitle>
               <div className="text-4xl font-bold text-gray-900 mb-2">119€</div>
               <p className="text-gray-600">por año • Facturación anual</p>
             </CardHeader>
@@ -150,7 +150,7 @@ export default function PricingSection() {
               <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Rocket className="w-6 h-6 text-purple-600" />
               </div>
-              <CardTitle className="text-2xl font-bold text-gray-900">Paranoid</CardTitle>
+              <CardTitle className="text-2xl font-bold text-gray-900">Paranoid • Ataca</CardTitle>
               <div className="text-2xl font-bold text-gray-900 mb-2">Precio a consultar</div>
               <p className="text-gray-600">Disponible pronto • Máxima seguridad</p>
             </CardHeader>

@@ -4,49 +4,37 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen pt-16">
-      {/* Animated background elements */}
+    <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-yellow-400 via-orange-400 to-yellow-300 min-h-screen pt-28">
+      {/* Cyberpunk background effects */}
       <div className="absolute inset-0">
-        {/* Stars */}
-        <div className="absolute top-20 left-20 w-2 h-2 bg-white rounded-full animate-pulse"></div>
-        <div className="absolute top-32 right-32 w-1 h-1 bg-blue-300 rounded-full animate-pulse delay-300"></div>
-        <div className="absolute top-64 left-64 w-1.5 h-1.5 bg-purple-300 rounded-full animate-pulse delay-700"></div>
-        <div className="absolute bottom-32 right-20 w-2 h-2 bg-white rounded-full animate-pulse delay-500"></div>
-        <div className="absolute bottom-64 left-32 w-1 h-1 bg-blue-200 rounded-full animate-pulse delay-1000"></div>
-        
-        {/* Floating particles */}
-        <div className="absolute top-40 left-1/4 w-4 h-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full opacity-70 animate-bounce"></div>
-        <div className="absolute top-80 right-1/4 w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-60 animate-bounce delay-500"></div>
-        
-        {/* Gradient orbs */}
-        <div className="absolute top-1/4 left-1/3 w-32 h-32 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-40 h-40 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/4 left-1/3 w-32 h-32 bg-gradient-to-r from-yellow-500/30 to-orange-500/30 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-40 h-40 bg-gradient-to-r from-orange-500/30 to-yellow-500/30 rounded-full blur-3xl"></div>
       </div>
       
       <div className="relative z-10 container mx-auto px-6 py-20">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
           {/* Left side - Content */}
-          <div className="flex-1 text-white max-w-2xl">
-            <div className="mb-8 animate-fade-in">
-              <div className="flex items-center gap-3 text-blue-300 mb-6">
-                <div className="flex items-center gap-2 bg-blue-500/20 backdrop-blur-sm rounded-full px-4 py-2 border border-blue-400/30">
+          <div className="flex-1 text-gray-900 max-w-2xl">
+            <div className="mb-8">
+              <div className="flex items-center gap-3 text-gray-800 mb-6">
+                <div className="flex items-center gap-2 bg-black/10 backdrop-blur-sm rounded-full px-4 py-2 border border-gray-800/30">
                   <Shield className="w-4 h-4" />
                   <span className="text-sm font-medium">Tu contenido tus reglas</span>
-                  <Sparkles className="w-4 h-4 animate-pulse" />
+                  <Sparkles className="w-4 h-4" />
                 </div>
               </div>
               
               <h1 className="text-6xl lg:text-7xl font-bold mb-8 leading-tight">
-                <span className="bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
                   People has rights,
                 </span>
                 <br />
-                <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
+                <span className="bg-gradient-to-r from-orange-600 via-red-600 to-orange-600 bg-clip-text text-transparent">
                   AI follow rules.
                 </span>
               </h1>
               
-              <p className="text-blue-100 text-xl mb-8 leading-relaxed opacity-90">
+              <p className="text-gray-800 text-xl mb-8 leading-relaxed">
                 Vigila, protege y monetiza el uso que hacen las IA en tu sitio web.
               </p>
 
@@ -56,59 +44,61 @@ const HeroSection = () => {
                   <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
                     <Shield className="w-4 h-4 text-red-600" />
                   </div>
-                  <span className="text-blue-200">Previene ataques de IA maliciosas</span>
+                  <span className="text-gray-800">Previene abusos de IA</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
                     <Zap className="w-4 h-4 text-green-600" />
                   </div>
-                  <span className="text-blue-200">Mejora tu SEO y experiencia de usuario</span>
+                  <span className="text-gray-800">Mejora tu SEO</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
                     <Stars className="w-4 h-4 text-blue-600" />
                   </div>
-                  <span className="text-blue-200">Aplica términos y condiciones para IA</span>
+                  <span className="text-gray-800">Genera términos de uso</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
                     <Sparkles className="w-4 h-4 text-purple-600" />
                   </div>
-                  <span className="text-blue-200">Tarifica el acceso a tus contenidos</span>
+                  <span className="text-gray-800">Tarifica el tráfico IA de tu web</span>
                 </div>
-                <div className="flex items-center gap-3 md:col-span-2">
+                <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center">
                     <Rocket className="w-4 h-4 text-orange-600" />
                   </div>
-                  <span className="text-blue-200">Sin cambiar de proveedor ni costes ocultos</span>
+                  <span className="text-gray-800">Sin cambiar de proveedor</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center">
+                    <Stars className="w-4 h-4 text-yellow-600" />
+                  </div>
+                  <span className="text-gray-800">Sin costes ocultos</span>
                 </div>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-16">
-                <Button className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl shadow-blue-500/25 border border-blue-400/30 transition-all duration-300 hover:scale-105 hover:shadow-blue-500/40">
-                  <Rocket className="w-5 h-5 mr-2 group-hover:animate-bounce" />
+                <Button className="group bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl border transition-all duration-300 hover:scale-105">
+                  <Rocket className="w-5 h-5 mr-2" />
                   Empezar Ahora
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
-                <Button variant="outline" className="group border-2 border-white/30 text-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded-xl font-semibold text-lg backdrop-blur-sm transition-all duration-300 hover:scale-105">
-                  <Play className="w-5 h-5 mr-2" />
-                  Ver Demo
                 </Button>
               </div>
               
               {/* Enhanced Stats */}
               <div className="grid grid-cols-3 gap-8">
                 <div className="text-center group">
-                  <div className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent text-3xl font-bold mb-2 group-hover:scale-110 transition-transform">2min</div>
-                  <div className="text-blue-200 text-sm font-medium">Instalación</div>
+                  <div className="text-gray-900 text-3xl font-bold mb-2 group-hover:scale-110 transition-transform">2min</div>
+                  <div className="text-gray-700 text-sm font-medium">Instalación</div>
                 </div>
                 <div className="text-center group">
-                  <div className="text-white text-3xl font-bold mb-2 group-hover:scale-110 transition-transform">0€</div>
-                  <div className="text-blue-200 text-sm font-medium">Pagos recurrentes</div>
+                  <div className="text-gray-900 text-3xl font-bold mb-2 group-hover:scale-110 transition-transform">0€</div>
+                  <div className="text-gray-700 text-sm font-medium">Pagos recurrentes</div>
                 </div>
                 <div className="text-center group">
-                  <div className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent text-3xl font-bold mb-2 group-hover:scale-110 transition-transform">30</div>
-                  <div className="text-blue-200 text-sm font-medium">Días garantía</div>
+                  <div className="text-gray-900 text-3xl font-bold mb-2 group-hover:scale-110 transition-transform">30</div>
+                  <div className="text-gray-700 text-sm font-medium">Días garantía</div>
                 </div>
               </div>
             </div>
