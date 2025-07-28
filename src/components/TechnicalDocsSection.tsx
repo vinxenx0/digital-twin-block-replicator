@@ -15,7 +15,7 @@ const TechnicalDocsSection = () => {
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Accede a toda la documentación técnica, whitepapers y recursos necesarios para 
-            implementar AI SHIELD en tu infraestructura
+            implementar Los GuardIAS en tu infraestructura
           </p>
         </div>
 
@@ -35,7 +35,7 @@ const TechnicalDocsSection = () => {
                     <div className="flex-1">
                       <h4 className="font-semibold text-gray-900 mb-2">Documentación Técnica Completa</h4>
                       <p className="text-sm text-gray-600 mb-4">
-                        Guía completa de implementación y configuración de AI SHIELD
+                        Guía completa de implementación y configuración de Los GuardIAS
                       </p>
                       <div className="flex items-center justify-between">
                         <span className="text-xs text-gray-500">PDF • 2.3 MB</span>

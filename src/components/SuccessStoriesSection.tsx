@@ -14,7 +14,7 @@ const SuccessStoriesSection = () => {
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Descubre cómo empresas de diferentes sectores han protegido y monetizado su
-            contenido digital con AI SHIELD
+            contenido digital con Los GuardIAS
           </p>
         </div>
 
@@ -82,7 +82,7 @@ const SuccessStoriesSection = () => {
               
               <p className="text-gray-700 mb-6 text-sm">
                 "Nuestros procesos productivos potenciales obtener basándose ambientado por 
-                conjunto de IA. Con AI SHIELD pudimos crear una zona de licenciamiento 
+                conjunto de IA. Con Los GuardIAS pudimos crear una zona de licenciamiento 
                 adecuados con más generar ingresos adicionales mientras protegemos nuestros 
                 protegida comercial."
               </p>
@@ -156,7 +156,7 @@ const SuccessStoriesSection = () => {
                </div>
               
               <p className="text-gray-700 mb-6 text-sm">
-                "El hecho de tener estado determinando nuestras métricas de SEO. AI SHIELD nos 
+                "El hecho de tener estado determinando nuestras métricas de SEO. Los GuardIAS nos 
                 permitió diferenciar claramente entre robots humanos y de IA, mejorando 
                 significativamente nuestros informes y estrategia SEO."
               </p>

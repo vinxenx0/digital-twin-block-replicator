@@ -66,7 +66,7 @@ export default function PricingSection() {
                   <span className="text-gray-700">Soporte por tickets (72h)</span>
                 </li>
               </ul>
-              <a href="/register">
+              <a href="https://losguardias.com/register">
                 <Button className="w-full bg-green-600 hover:bg-green-700 text-white mt-6" size="lg">
                   Empezar Gratis
                 </Button>
@@ -140,7 +140,7 @@ export default function PricingSection() {
                   <span className="text-gray-700">Alertas push móviles</span>
                 </li>
               </ul>
-              <a href="/register">
+              <a href="https://losguardias.com/register">
                 <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white mt-6" size="lg">
                   Empezar Pro
                 </Button>
