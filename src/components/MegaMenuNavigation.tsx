@@ -187,14 +187,18 @@ const MegaMenuNavigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div 
-            className="flex items-center gap-3 cursor-pointer group" 
+            className="flex items-center gap-3 cursor-pointer" 
             onClick={() => scrollToSection("hero")}
           >
-            <Shield className="h-8 w-8 bg-gradient-to-br from-blue-500 via-purple-500 to-blue-600 bg-clip-text text-transparent group-hover:from-purple-500 group-hover:to-blue-500 transition-all duration-500" />
-            <span className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">Los GuardIAS</span>
+            <Shield className="h-8 w-8 text-blue-600" />
+            <span className="text-xl font-bold">
+              <span className="text-blue-600">Los Guard</span>
+              <span className="bg-gradient-to-r from-purple-600 to-violet-600 bg-clip-text text-transparent">IAS</span>
+            </span>
           </div>
           
-          <NavigationMenu className="hidden lg:flex mx-auto">
+          <div className="flex-1 flex justify-center">
+            <NavigationMenu className="hidden lg:flex">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-muted-foreground hover:text-primary">
@@ -251,9 +255,10 @@ const MegaMenuNavigation = () => {
                     }}
                   />
                 </NavigationMenuContent>
-              </NavigationMenuItem>
+               </NavigationMenuItem>
             </NavigationMenuList>
-          </NavigationMenu>
+            </NavigationMenu>
+          </div>
           
           {isLoading ? (
             <span className="text-muted-foreground">Cargando...</span>

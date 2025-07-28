@@ -9,9 +9,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-3 mb-6 group">
-              <Shield className="h-8 w-8 bg-gradient-to-br from-blue-400 via-purple-400 to-blue-500 bg-clip-text text-transparent group-hover:from-purple-400 group-hover:to-blue-400 transition-all duration-500" />
-              <span className="text-xl font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">Los GuardIAS</span>
+            <div className="flex items-center gap-3 mb-6">
+              <Shield className="h-8 w-8 text-blue-400" />
+              <span className="text-xl font-bold">
+                <span className="text-blue-400">Los Guard</span>
+                <span className="bg-gradient-to-r from-purple-400 to-violet-400 bg-clip-text text-transparent">IAS</span>
+              </span>
             </div>
             <p className="text-gray-400 text-sm mb-6">
               La primera plataforma de protección y control de contenido
