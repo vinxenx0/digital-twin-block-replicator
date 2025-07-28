@@ -79,11 +79,13 @@ const HeroSection = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-16">
-                <Button className="group bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl border transition-all duration-300 hover:scale-105">
-                  <Rocket className="w-5 h-5 mr-2" />
-                  Empezar Ahora
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                <a href="/register">
+                  <Button className="group bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl border transition-all duration-300 hover:scale-105">
+                    <Rocket className="w-5 h-5 mr-2" />
+                    Empezar Ahora
+                    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </a>
               </div>
               
                {/* Enhanced Stats */}

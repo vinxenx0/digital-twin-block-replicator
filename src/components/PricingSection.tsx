@@ -66,9 +66,11 @@ export default function PricingSection() {
                   <span className="text-gray-700">Soporte por tickets (72h)</span>
                 </li>
               </ul>
-              <Button className="w-full bg-green-600 hover:bg-green-700 text-white mt-6" size="lg">
-                Empezar Gratis
-              </Button>
+              <a href="/register">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white mt-6" size="lg">
+                  Empezar Gratis
+                </Button>
+              </a>
             </CardContent>
           </Card>
 
@@ -138,9 +140,11 @@ export default function PricingSection() {
                   <span className="text-gray-700">Alertas push móviles</span>
                 </li>
               </ul>
-              <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white mt-6" size="lg">
-                Empezar Pro
-              </Button>
+              <a href="/register">
+                <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white mt-6" size="lg">
+                  Empezar Pro
+                </Button>
+              </a>
             </CardContent>
           </Card>
 
@@ -221,7 +225,10 @@ export default function PricingSection() {
               Creamos soluciones personalizadas para empresas con necesidades específicas. 
               Habla con nuestro equipo para diseñar el plan perfecto.
             </p>
-            <Button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3">
+            <Button 
+              className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Contactar con Ventas
             </Button>
           </div>
