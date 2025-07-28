@@ -1,5 +1,5 @@
 
-import { Shield, Zap, Rocket, Stars, Sparkles, ArrowRight, Play } from "lucide-react";
+import { Shield, Zap, Rocket, Stars, Sparkles, ArrowRight, Play, Clock, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -86,17 +86,20 @@ const HeroSection = () => {
                 </Button>
               </div>
               
-              {/* Enhanced Stats */}
-               <div className="grid grid-cols-3 gap-8">
-                <div className="text-center group">
+               {/* Enhanced Stats */}
+                <div className="grid grid-cols-3 gap-8">
+                <div className="text-center group flex flex-col items-center">
+                  <Clock className="w-8 h-8 text-blue-600 mb-3" />
                   <div className="text-gray-900 text-3xl font-bold mb-2 group-hover:scale-110 transition-transform">2min</div>
                   <div className="text-gray-700 text-sm font-medium">Instalación</div>
                 </div>
-                <div className="text-center group">
+                <div className="text-center group flex flex-col items-center">
+                  <Eye className="w-8 h-8 text-blue-600 mb-3" />
                   <div className="text-gray-900 text-3xl font-bold mb-2 group-hover:scale-110 transition-transform">Sin</div>
                   <div className="text-gray-700 text-sm font-medium">Costes ocultos</div>
                 </div>
-                <div className="text-center group">
+                <div className="text-center group flex flex-col items-center">
+                  <Zap className="w-8 h-8 text-blue-600 mb-3" />
                   <div className="text-gray-900 text-3xl font-bold mb-2 group-hover:scale-110 transition-transform">Sin</div>
                   <div className="text-gray-700 text-sm font-medium">Cambiar de proveedor</div>
                 </div>

@@ -187,14 +187,11 @@ const MegaMenuNavigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div 
-            className="flex items-center cursor-pointer" 
+            className="flex items-center gap-3 cursor-pointer group" 
             onClick={() => scrollToSection("hero")}
           >
-            <img 
-              src="/lovable-uploads/15bae72f-aca2-407b-9317-84eb1e065ae4.png" 
-              alt="Los GuardIAS" 
-              className="h-8"
-            />
+            <Shield className="h-8 w-8 text-primary animate-pulse group-hover:scale-110 transition-transform duration-300" />
+            <span className="text-xl font-bold text-foreground">Los GuardIAS</span>
           </div>
           
           <NavigationMenu className="hidden lg:flex">

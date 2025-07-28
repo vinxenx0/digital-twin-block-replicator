@@ -9,12 +9,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <img 
-                src="/lovable-uploads/15bae72f-aca2-407b-9317-84eb1e065ae4.png" 
-                alt="Los GuardIAS" 
-                className="h-8"
-              />
+            <div className="flex items-center gap-3 mb-6 group">
+              <Shield className="h-8 w-8 text-primary animate-pulse group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-xl font-bold text-white">Los GuardIAS</span>
             </div>
             <p className="text-gray-400 text-sm mb-6">
               La primera plataforma de protección y control de contenido
