@@ -10,8 +10,8 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6 group">
-              <Shield className="h-8 w-8 text-primary animate-pulse group-hover:scale-110 transition-transform duration-300" />
-              <span className="text-xl font-bold text-white">Los GuardIAS</span>
+              <Shield className="h-8 w-8 bg-gradient-to-br from-blue-400 via-purple-400 to-blue-500 bg-clip-text text-transparent group-hover:from-purple-400 group-hover:to-blue-400 transition-all duration-500" />
+              <span className="text-xl font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">Los GuardIAS</span>
             </div>
             <p className="text-gray-400 text-sm mb-6">
               La primera plataforma de protección y control de contenido

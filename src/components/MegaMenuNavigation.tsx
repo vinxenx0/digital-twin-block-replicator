@@ -190,11 +190,11 @@ const MegaMenuNavigation = () => {
             className="flex items-center gap-3 cursor-pointer group" 
             onClick={() => scrollToSection("hero")}
           >
-            <Shield className="h-8 w-8 text-primary animate-pulse group-hover:scale-110 transition-transform duration-300" />
-            <span className="text-xl font-bold text-foreground">Los GuardIAS</span>
+            <Shield className="h-8 w-8 bg-gradient-to-br from-blue-500 via-purple-500 to-blue-600 bg-clip-text text-transparent group-hover:from-purple-500 group-hover:to-blue-500 transition-all duration-500" />
+            <span className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">Los GuardIAS</span>
           </div>
           
-          <NavigationMenu className="hidden lg:flex">
+          <NavigationMenu className="hidden lg:flex mx-auto">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-muted-foreground hover:text-primary">
